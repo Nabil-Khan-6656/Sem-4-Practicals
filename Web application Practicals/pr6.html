@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month Name</title>
+</head>
+<body >
+    <form name="d" >
+        <table border="2">
+            <tr>
+                <td>Month no. </td>
+                <td> <input type="text" name="t1" > </td>
+            </tr>
+            <tr>
+                <td>Month name </td>
+                <td> <input type="text" name="t2" > </td>
+            </tr>
+
+            <tr>
+                 <td colspan="2">
+                    <input type="button" name="btn" value="Show Month Name" onclick="handleClick()">
+                    <input type="reset" name="btn2">
+                 </td>
+            </tr>
+        </table>
+    </form>
+
+<script>
+    function handleClick(){
+        var a ;
+        a = (d.t1.value);
+        {
+            if(a==1)
+               d.t2.value = "January";
+            else if(a==2)
+               d.t2.value = "February";   
+            else if(a==3)
+               d.t2.value = "March";   
+            else if(a==4)
+               d.t2.value = "April";   
+            else if(a==5)
+               d.t2.value = "May";   
+            else if(a==6)
+               d.t2.value = "June";   
+            else if(a==7)
+               d.t2.value = "July";   
+            else if(a==8)
+               d.t2.value = "August";   
+            else if(a==9)
+               d.t2.value = "September";   
+            else if(a==10)
+               d.t2.value = "October";   
+            else if(a==11)
+               d.t2.value = "November";   
+            else if(a==12)
+               d.t2.value = "December ";   
+            else 
+               alert("You are entering wrong value");
+        }
+    }
+</script>    
+</body>
+</html>

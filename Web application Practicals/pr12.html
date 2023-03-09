@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Check Box</title>
+</head>
+<body>
+    Select Your Favourite Game : 
+
+    <input type="checkbox" id="n1" onclick="handleClick()"> Cricket
+    <input type="checkbox" id="n2" onclick="handleClick()"> Football
+    <input type="checkbox" id="n3" onclick="handleClick()"> Vollyball
+    <input type="checkbox" id="n4" onclick="handleClick()"> Basketball
+
+
+<script>
+    function handleClick(){
+        var n1 = document.getElementById("n1");
+        var n2 = document.getElementById("n2");
+        var n3 = document.getElementById("n3");
+        var n4 = document.getElementById("n4");
+
+        if(n1.checked){
+            alert("Cricket is checked");
+        }
+        else if(n2.checked){
+            alert("Football is checked");
+        }
+        else if(n3.checked){
+            alert("Vollyball is checked");
+        }
+        else if(n4.checked){
+            alert("Basketball is checked");
+        }
+    }
+</script>    
+</body>
+</html>

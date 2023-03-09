@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+    <form name="frm" >
+        <table border="2">
+            <tr>
+                <td>No. 1 </td>
+                <td> <input type="text" name="t1" > </td>
+            </tr>
+            <tr>
+                <td>No. 2  </td>
+                <td> <input type="text" name="t2" > </td>
+            </tr>
+
+            <tr>
+                 <td colspan="2" align="center">
+                    <input type="button" name="btn1" value="Add" onclick="sum()">
+                    <input type="button" name="btn2" value="Sub" onclick="sub()">
+                    <input type="button" name="btn3" value="Mul" onclick="mul()">
+                    <input type="button" name="btn4" value="Div" onclick="div()">
+                 </td>
+            </tr>
+
+            <tr>
+                <td>Result :</td>
+                <td><input type="text" name="t3"></td>
+            </tr>
+        </table>
+    </form>
+
+
+<script>
+    function sum(){
+        var a , b ;
+        a = Number(frm.t1.value);
+        b = Number(frm.t2.value);
+        if(Number(a) && Number(b))
+           frm.t3.value = a+b;
+        else
+           alert("Incorrect");   
+    }
+    function sub(){
+        var a , b ;
+        a = Number(frm.t1.value);
+        b = Number(frm.t2.value);
+        if(Number(a) && Number(b))
+           frm.t3.value = a-b;
+        else
+           alert("Incorrect");   
+    }
+    function mul(){
+        var a , b ;
+        a = Number(frm.t1.value);
+        b = Number(frm.t2.value);
+        if(Number(a) && Number(b))
+           frm.t3.value = a*b;
+        else
+           alert("Incorrect");   
+    }
+    function div(){
+        var a , b ;
+        a = Number(frm.t1.value);
+        b = Number(frm.t2.value);
+        if(Number(a) && Number(b))
+           frm.t3.value = a/b;
+        else
+           alert("Incorrect");   
+    }
+</script>    
+</body>
+</html>
